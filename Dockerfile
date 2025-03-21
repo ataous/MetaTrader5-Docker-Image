@@ -30,7 +30,7 @@ RUN dpkg --add-architecture i386 \
 
 # Install WineHQ stable package and dependencies
 RUN apt-get install --install-recommends -y \
-    winehq-stable \
+    winehq-devel \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
